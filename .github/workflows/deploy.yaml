@@ -5,7 +5,7 @@ on:
       - master # check your repo, your default branch might be master!
  
 jobs:
-  build:
+  deploy-to-aws-ebs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
