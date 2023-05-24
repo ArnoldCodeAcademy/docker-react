@@ -4,9 +4,9 @@ services:
     build: 
       # here I can also give a nested path, if I had my project in a subfolder parallel to others
       context: .
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile.dev
     ports:
-      - "80:80"
+      - "3000:3000"
     volumes:
       # means: do not try a folder against app/node_modules inside the container
       - /app/node_modules
